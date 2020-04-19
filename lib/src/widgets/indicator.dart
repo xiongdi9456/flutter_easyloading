@@ -3,6 +3,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import '../easy_loading.dart';
 import '../theme.dart';
+import '../theme.dart';
 
 class LoadingIndicator extends StatefulWidget {
   const LoadingIndicator({
@@ -178,6 +179,9 @@ class _LoadingIndicatorState extends State<LoadingIndicator> {
           color: _indicatorColor,
           size: _size,
         );
+        break;
+      case EasyLoadingIndicatorType.customer:
+        _indicator = EasyLoadingTheme.indicatorWidget;
         break;
       default:
     }

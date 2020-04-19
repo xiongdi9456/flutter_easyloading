@@ -38,6 +38,7 @@ enum EasyLoadingIndicatorType {
   ripple,
   spinningCircle,
   squareCircle,
+  customer
 }
 
 /// loading mask type
@@ -106,6 +107,8 @@ class EasyLoading {
 
   /// should allow user interactions while loading is displayed.
   bool userInteractions;
+
+  Widget indicatorWidget;
 
   /// success widget of loading
   Widget successWidget;

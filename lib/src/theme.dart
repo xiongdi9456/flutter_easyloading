@@ -79,4 +79,6 @@ class EasyLoadingTheme {
       (EasyLoading.instance.maskType == EasyLoadingMaskType.none
           ? true
           : false);
+
+  static Widget get indicatorWidget => EasyLoading.instance.indicatorWidget;
 }
